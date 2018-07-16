@@ -13,3 +13,4 @@ class App < Sinatra::Base
 end
 
 require_relative 'routes/init'
+require_relative 'models/init'
