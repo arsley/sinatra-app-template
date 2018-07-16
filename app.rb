@@ -10,9 +10,6 @@ class App < Sinatra::Base
     sprockets.append_path File.join(root, 'assets', 'js')
     register Sinatra::AssetPipeline
   end
-
-  get '/' do
-    slim :index
-  end
 end
 
+require_relative 'routes/init'
